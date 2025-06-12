@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script>
+// Эмуляция Telegram WebApp объекта
+window.Telegram = {
+  WebApp: {
+    version: "9.0",
+    platform: "ios",
+    initData: "user=%7B%22id%22%3A123456789%2C%22first_name%22%3A%22Test%20User%22%2C%22language_code%22%3A%22en%22%7D&chat_instance=-1234567890&chat_type=sender&auth_date=1749717777&hash=dummyhash",
+    initDataUnsafe: {
+      user: {
+        id: 123456789,
+        first_name: "Test User",
+        language_code: "en"
+      },
+      chat_instance: "-1234567890",
+      chat_type: "sender",
+      auth_date: 1749717777,
+      hash: "dummyhash"
+    },
+    themeParams: {
+      bg_color: "#ffffff",
+      button_color: "#007aff",
+      text_color: "#000000"
+    },
+    isExpanded: true,
+    expand: function() { console.log("expand called"); },
+    sendData: function(data) { console.log("sendData:", data); }
+  }
+};
+</script>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<!-- Подключение твоего Adsgram SDK -->
+<script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+</head>
+
+<body>
+<adsgram-task data-block-id='task-11839' data-debug='true' class='task'>
+  <p slot='reward' class='task__reward'>🪙 100</p>
+  <div slot='button' class='task__button'>go</div>
+  <div slot='claim' class='task__button task__button_claim'>claim</div>
+  <div slot='done' class='task__button task__button_done'>done</div>
+</adsgram-task>
+</body>
+</html>
