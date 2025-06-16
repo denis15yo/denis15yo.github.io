@@ -1,38 +1,52 @@
-.task {
-  --adsgram-task-font-size: 16px;
-  --adsgram-task-icon-size: 50px;
-  --adsgram-task-icon-title-gap: 15px;
-  --adsgram-task-button-width: 60px;
-  --adsgram-task-icon-border-radius: 8px;
+html, body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
 
-  display: block;
+.task {
+  --adsgram-task-font-size: 30px;
+  --adsgram-task-icon-size: 70px;
+  --adsgram-task-icon-title-gap: 16px;
+  --adsgram-task-button-width: 90px;
+  --adsgram-task-icon-border-radius: 12px;
+
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 8px 16px 8px 8px;
-  border-radius: 16px;
+  padding: 16px;
+  border-radius: 20px;
   background-color: #1d2733;
-  font-family: Roboto;
-  color: white;
+  font-family: Roboto, sans-serif;
+  color: #ffffff;
   box-sizing: border-box;
 }
 
 .task__reward {
-  margin: 5px 0 0 0;
-  font-size: 14px;
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .task__button {
-  margin-left: 10px;
+  margin-left: auto;
   background-color: #50a8eb;
-  border-radius: 5px;
-  padding: 6px 12px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task__button:hover {
+  background-color: #4095d0;
 }
 
 .task__button_claim {
-  margin-left: 0;
   background-color: #ee941c;
 }
 
 .task__button_done {
-  margin-left: 0;
   background-color: #007539;
 }
