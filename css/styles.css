@@ -42,3 +42,14 @@ html, body {
 .task__button_done {
   background-color: #007539;
 }
+
+.placeholder {
+  align-items: center;
+  background-color: #ccc;
+  color: #666;
+  display: flex;
+  font-size: 1.5rem;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
