@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const adsgram = document.getElementById('adsgram');
-  const placeholder = document.getElementById('placeholder');
+  const placeholder = document.getElementById('ad-placeholder');
 
   function showPlaceholder() {
     adsgram.style.display = 'none';
